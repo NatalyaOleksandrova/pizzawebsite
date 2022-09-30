@@ -1,0 +1,431 @@
+<div class="offer" id="offer">
+    <h1 class="offer__title">Спецпропозиція</h1>
+        <div class="container"> 
+             <div class="offer__slider slider-offer  menus">
+
+                <div class="slider-offer__item slider-item">
+                    <div class="slider-item__img"><img src="img/specialoffer/bavariya.webp"  alt="bavariya"></div>
+                        <p class="slider-item__name">Піца Баварія</p>
+                        <p class="slider-item__dough">Тісто:</p> 
+                            <div class="widget">
+                                <div class="widget__body">
+                                    <div class="tistotype">
+                                        <div class="tistotype__row">
+                                            <input type="checkbox" class="tistotype__checkbox">
+                                            <label class="tistotype__btn active">Стандартне</label>
+                                            <input type="checkbox"  class="tistotype__checkbox">
+                                            <label class="tistotype__btn">Тонке</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget">
+                                <div class="widget__body">
+                                    <label class="checkbox withborder">
+                                        <input type="checkbox" class="checkbox__real" name="term">
+                                        <span class="checkbox__fake"></span>
+                                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                        <span class="checkbox__size">30см</span>
+                                        <i class="fa-solid fa-weight-hanging"></i>
+                                        <span class="checkbox__weight">500г</span>
+                                        <span class="checkbox__price">200 ₴</span>
+                                    </label>
+
+                                    <label class="checkbox">
+                                        <input type="checkbox" class="checkbox__real" name="term">
+                                        <span class="checkbox__fake"></span>
+                                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                        <span class="checkbox__size">40см</span>
+                                        <i class="fa-solid fa-weight-hanging"></i>
+                                        <span class="checkbox__weight">400г</span>
+                                        <span class="checkbox__price">900 ₴</span>
+                                    </label>
+
+                                </div>
+                            </div>
+                            
+                        <div class="ingredients open">
+                            <button type="button" class="add-components" data-modal="modal-components">
+                                    <i class="fa-solid fa-plus"></i>
+                                     <span class="js-ingredient-action" data-ia-empty="Додати інгредієнти" data-ia-filled="Змінити інгредієнти">Додати інгредієнти</span>:
+                                    <span class="ingredient-list js-ingredient-list" style="display: none;"></span>
+                            </button> 
+                        </div>
+                        <div class="content-slider__send send-content">
+                            <p class="send-content__price">125 ₴</p>
+                            <button onclick='addItem(this)' class='send-content__button'>Замовити</button>
+                        </div>
+                </div>
+            <div class="slider__item slider-item">
+                <div class="slider-item__img"><img src="img/specialoffer/kapreze.webp" alt="kapreze"></div>
+                    <p class="slider-item__name">Піца Капрезе</p>
+                    <p class="slider-item__dough">Тісто:</p>
+                <div class="tistotype">
+                    <div class="tistotype__row">
+                            <input type="checkbox" class="tistotype__checkbox">
+                            <label class="tistotype__btn active">Стандартне</label>
+                            <input type="checkbox" class="tistotype__checkbox">
+                            <label class="tistotype__btn">Тонке</label>
+                    </div>
+                </div>
+                    <div class="widget">
+                        <div class="widget__body">
+                            <label class="checkbox withborder">
+                                <input type="checkbox" class="checkbox__real" name="term">
+                                <span class="checkbox__fake"></span>
+                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                <span class="checkbox__size">30см</span>
+                                <i class="fa-solid fa-weight-hanging"></i>
+                                <span class="checkbox__weight">500г</span>
+                                <span class="checkbox__price">200 ₴</span>
+                            </label>
+
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox__real" name="term">
+                                <span class="checkbox__fake"></span>
+                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                <span class="checkbox__size">40см</span>
+                                <i class="fa-solid fa-weight-hanging"></i>
+                                <span class="checkbox__weight">400г</span>
+                                <span class="checkbox__price">900 ₴</span>
+                            </label>
+                        </div>
+                    </div>
+                <div class="ingredients open">
+                    <button type="button" class="add-components js-modal-open" data-modal="modal-components">
+                        <i class="fa-solid fa-plus"></i>
+                        <span class="js-ingredient-action" data-ia-empty="Додати інгредієнти" data-ia-filled="Змінити інгредієнти">Додати інгредієнти</span>:
+                        <span class="ingredient-list js-ingredient-list" style="display: none;"></span>
+                    </button>
+                </div>
+                <div class="content-slider__send send-content">
+                    <p class="send-content__price">125 ₴</p>
+                    <button onclick='addItem(this)' class='send-content__button'>Замовити</button>
+                </div>
+            </div>
+            <div class="slider__item slider-item">
+                <div class="slider-item__img"><img src="img/specialoffer/peperoni.webp" alt="peperoni"></div>
+            
+                <p class="slider-item__name">Піца Папероні</p>
+                <p class="slider-item__dough">Тісто:</p>
+                <div class="tistotype">
+                    <div class="tistotype__row">
+                        <input type="checkbox" class="tistotype__checkbox">
+                        <label class="tistotype__btn active" >Стандартне</label>
+                        <input type="checkbox" class="tistotype__checkbox">
+                        <label class="tistotype__btn">Тонке</label>
+                    </div>
+        
+                </div>
+                <div class="widget">
+                    <div class="widget__body">
+                        <label class="checkbox withborder">
+                            <input type="checkbox" class="checkbox__real" name="term">
+                            <span class="checkbox__fake"></span>
+                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            <span class="checkbox__size">30см</span>
+                            <i class="fa-solid fa-weight-hanging"></i>
+                            <span class="checkbox__weight">500г</span>
+                            <span class="checkbox__price">200 ₴</span>
+                        </label>
+
+                        <label class="checkbox">
+                            <input type="checkbox" class="checkbox__real" name="term">
+                            <span class="checkbox__fake"></span>
+                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            <span class="checkbox__size">40см</span>
+                            <i class="fa-solid fa-weight-hanging"></i>
+                            <span class="checkbox__weight">400г</span>
+                            <span class="checkbox__price">900 ₴</span>
+                        </label>
+
+                    </div>
+                </div>
+                <div class="ingredients open">
+                    <button type="button" class="add-components js-modal-open" data-modal="modal-components">
+                        <i class="fa-solid fa-plus"></i>
+                        <span class="js-ingredient-action" data-ia-empty="Додати інгредієнти" data-ia-filled="Змінити інгредієнти">Додати інгредієнти</span>:
+                        <span class="ingredient-list js-ingredient-list" style="display: none;"></span>
+                    </button>
+                </div>
+                <div class="content-slider__send send-content">
+                    <p class="send-content__price">125 ₴</p>
+                    <button onclick='addItem(this)' class='send-content__button'>Замовити</button>
+                </div>
+            </div>
+            <div class="slider__item slider-item">
+                <div class="slider-item__img"><img src="img/specialoffer/polo-kon-formadzi.webp" alt="polo-kon-formadzi"></div>
+            
+                <p class="slider-item__name">Піца Формаджі</p>
+                <p class="slider-item__dough">Тісто:</p>
+                <div class="tistotype">
+                    <div class="tistotype__row">
+                        <input type="checkbox" class="tistotype__checkbox">
+                        <label class="tistotype__btn active">Стандартне</label>
+                        <input type="checkbox" class="tistotype__checkbox">
+                        <label class="tistotype__btn">Тонке</label>
+                    </div>
+                </div>
+                <div class="widget">
+                    <div class="widget__body">
+                        <label class="checkbox withborder">
+                            <input type="checkbox" class="checkbox__real" name="term">
+                            <span class="checkbox__fake"></span>
+                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            <span class="checkbox__size">30см</span>
+                            <i class="fa-solid fa-weight-hanging"></i>
+                            <span class="checkbox__weight">500г</span>
+                            <span class="checkbox__price">200 ₴</span>
+                        </label>
+
+                        <label class="checkbox">
+                            <input type="checkbox" class="checkbox__real" name="term">
+                            <span class="checkbox__fake"></span>
+                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            <span class="checkbox__size">40см</span>
+                            <i class="fa-solid fa-weight-hanging"></i>
+                            <span class="checkbox__weight">400г</span>
+                            <span class="checkbox__price">900 ₴</span>
+                        </label>
+
+                    </div>
+                </div>
+                <div class="ingredients open">
+                    <button type="button" class="add-components js-modal-open" data-modal="modal-components">
+                        <i class="fa-solid fa-plus"></i>
+                        <span class="js-ingredient-action" data-ia-empty="Додати інгредієнти" data-ia-filled="Змінити інгредієнти">Додати інгредієнти</span>:
+                        <span class="ingredient-list js-ingredient-list" style="display: none;"></span>
+                        </button>
+                        <button type="button" class="remove-components js-ingredient-clear">
+                            <svg width="26" height="26"><use href="#sprite-delete"></use></svg>
+                            Прибрати всі додатки</button>
+                </div>
+                <div class="content-slider__send send-content">
+                    <p class="send-content__price">125 ₴</p>
+                    <button onclick='addItem(this)' class='send-content__button'>Замовити</button>
+                </div>
+            </div>
+            <div class="slider__item slider-item">
+                <div class="slider-item__img"><img src="img/specialoffer/selmon.webp" alt="selmon"></div>
+            
+                <p class="slider-item__name">Піца Селмон</p>
+                <p class="slider-item__dough">Тісто:</p>
+                <div class="tistotype">
+                    <div class="tistotype__row">
+                        <input type="checkbox" class="tistotype__checkbox">
+                        <label class="tistotype__btn active">Стандартне</label>
+                        <input type="checkbox" class="tistotype__checkbox">
+                        <label class="tistotype__btn">Тонке</label>
+                    </div>
+        
+                </div>
+                <div class="widget">
+                    <div class="widget__body">
+                        <label class="checkbox withborder">
+                            <input type="checkbox" class="checkbox__real" name="term">
+                            <span class="checkbox__fake"></span>
+                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            <span class="checkbox__size">30см</span>
+                            <i class="fa-solid fa-weight-hanging"></i>
+                            <span class="checkbox__weight">500г</span>
+                            <span class="checkbox__price">200 ₴</span>
+                        </label>
+
+                        <label class="checkbox">
+                            <input type="checkbox" class="checkbox__real" name="term">
+                            <span class="checkbox__fake"></span>
+                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            <span class="checkbox__size">40см</span>
+                            <i class="fa-solid fa-weight-hanging"></i>
+                            <span class="checkbox__weight">400г</span>
+                            <span class="checkbox__price">900 ₴</span>
+                        </label>
+
+                    </div>
+                </div>
+                <div class="ingredients open">
+                    <button type="button" class="add-components js-modal-open" data-modal="modal-components">
+                        <i class="fa-solid fa-plus"></i>
+                       <span class="js-ingredient-action" data-ia-empty="Додати інгредієнти" data-ia-filled="Змінити інгредієнти">Додати інгредієнти</span>:
+                        <span class="ingredient-list js-ingredient-list" style="display: none;"></span>
+                        </button>
+                        <button type="button" class="remove-components js-ingredient-clear">
+                            <svg width="26" height="26"><use href="#sprite-delete"></use></svg>
+                            Прибрати всі додатки</button>
+                </div>
+                <div class="content-slider__send send-content">
+                    <p class="send-content__price">125 ₴</p>
+                    <button onclick='addItem(this)' class='send-content__button'>Замовити</button>
+                </div>
+            </div>
+            <div class="slider__item slider-item">
+                <div class="slider-item__img"><img src="img/specialoffer/silviya.webp" alt="silviya"></div>
+            
+                <p class="slider-item__name">Піца Сільвія</p>
+                <p class="slider-item__dough">Тісто:</p>
+                <div class="tistotype">
+                    <div class="tistotype__row">
+                        <input type="checkbox" class="tistotype__checkbox">
+                        <label class="tistotype__btn active">Стандартне</label>
+                        <input type="checkbox" class="tistotype__checkbox">
+                        <label class="tistotype__btn">Тонке</label>
+                    </div>
+        
+                </div>
+                <div class="widget">
+                    <div class="widget__body">
+                        <label class="checkbox withborder">
+                            <input type="checkbox" class="checkbox__real" name="term">
+                            <span class="checkbox__fake"></span>
+                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            <span class="checkbox__size">30см</span>
+                            <i class="fa-solid fa-weight-hanging"></i>
+                            <span class="checkbox__weight">500г</span>
+                            <span class="checkbox__price">200 ₴</span>
+                        </label>
+
+                        <label class="checkbox">
+                            <input type="checkbox" class="checkbox__real" name="term">
+                            <span class="checkbox__fake"></span>
+                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            <span class="checkbox__size">40см</span>
+                            <i class="fa-solid fa-weight-hanging"></i>
+                            <span class="checkbox__weight">400г</span>
+                            <span class="checkbox__price">900 ₴</span>
+                        </label>
+
+                    </div>
+                </div>
+                <div class="ingredients open">
+                    <button type="button" class="add-components js-modal-open" data-modal="modal-components">
+                        <i class="fa-solid fa-plus"></i>
+                        <span class="js-ingredient-action" data-ia-empty="Додати інгредієнти" data-ia-filled="Змінити інгредієнти">Додати інгредієнти</span>:
+                        <span class="ingredient-list js-ingredient-list" style="display: none;"></span>
+                    </button>  
+                </div>
+                <div class="content-slider__send send-content">
+                    <p class="send-content__price">125 ₴</p>
+                    <button onclick='addItem(this)' class='send-content__button'>Замовити</button>
+                </div>
+            </div>
+   
+        </div>
+        <div class="popup container">
+            <div class="overlay"></div>
+              <div class="popup__addingredients addingredients">
+                 <i class="fa fa-window-close close fa-2x"></i>
+                      <div class="addingredients__item item-ingredients" >
+                          <div class="item-ingredients__img"><img src="img/popup/avocado.webp" alt="avocado"></div>
+                          <div class="item-ingredients__details">
+                          <div class="item-ingredients__title"><h3 class="titl">Авокадо</h3></div>
+                          <div class="item-ingredients__price">60 гр - 60₴</div>
+                          <div class="buttons">
+                            <span class="minus">-</span>
+                            <input type="text" value="0">
+                            <span class="plus">+</span>
+                            </div>
+                          </div>   
+                      </div>
+                      <div class="addingredients__item item-ingredients">
+                          <div class="item-ingredients__img"><img src="img/popup/bekon.webp" alt="bekon"></div>
+                          <div class="item-ingredients__details">
+                          <div class="item-ingredients__title"><h3 class="titl">Бекон</h3></div>
+                          <div class="item-ingredients__price">60 гр - 60₴</div>
+                          <div class="buttons">
+                            <span class="minus">-</span>
+                            <input type="text" value="0">
+                            <span class="plus">+</span>
+                            </div>
+                          </div>  
+                      </div>
+                      <div class="addingredients__item item-ingredients">
+                          <div class="item-ingredients__img"><img src="img/popup/cherry.webp" alt="cherry"></div>
+                          <div class="item-ingredients__details">
+                          <div class="item-ingredients__title"><h3 class="titl">Томати Чері</h3></div>
+                          <div class="item-ingredients__price">60 гр - 60₴</div>
+                          <div class="buttons">
+                            <span class="minus">-</span>
+                            <input type="text" value="0">
+                            <span class="plus">+</span>
+                          </div>
+                          </div>  
+                      </div>
+                 
+      
+                        <div class="addingredients__item item-ingredients ">
+                            <div class="item-ingredients__img"><img src="img/popup/mozarela.webp" alt="mozarella"></div>
+                            <div class="item-ingredients__details">
+                            <div class="item-ingredients__title"><h3 class="titl">Моцарела</h3></div>
+                            <div class="item-ingredients__price">60 гр - 60₴</div>
+                            <div class="buttons">
+                                <span class="minus">-</span>
+                                <input type="text" value="0">
+                                <span class="plus">+</span>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="addingredients__item item-ingredients">
+                            <div class="item-ingredients__img"><img src="img/popup/mushrooms.webp" alt="mushrooms"></div>
+                            <div class="item-ingredients__details">
+                            <div class="item-ingredients__title"><h3 class="titl">Печериці</h3></div>
+                            <div class="item-ingredients__price">60 гр - 60₴</div>
+                            <div class="buttons">
+                                <span class="minus">-</span>
+                                <input type="text" value="0">
+                                <span class="plus">+</span>
+                                </div>
+                            </div>   
+                        </div>
+                        <div class="addingredients__item item-ingredients">
+                            <div class="item-ingredients__img"><img src="img/popup/parma.webp" alt="parma"></div>
+                            <div class="item-ingredients__details">
+                            <div class="item-ingredients__title"><h3 class="titl">Пармська шинка</h3></div>
+                            <div class="item-ingredients__price">60 гр - 60₴</div>
+                            <div class="buttons">
+                                <span class="minus">-</span>
+                                <input type="text" value="0">
+                                <span class="plus">+</span>
+                                </div>
+                            </div>  
+                        </div>
+
+                        <div class="addingredients__item item-ingredients ">
+                            <div class="item-ingredients__img"><img src="img/popup/parmezan.webp" alt="parmezan"></div>
+                            <div class="item-ingredients__details">
+                            <div class="item-ingredients__title"><h3 class="titl">Пармезан</h3></div>
+                            <div class="item-ingredients__price">60 гр - 60₴</div>
+                            <div class="buttons">
+                                <span class="minus">-</span>
+                                <input type="text" value="0">
+                                <span class="plus">+</span>
+                                </div>
+                            </div>   
+                        </div>
+                        <div class="addingredients__item item-ingredients ">
+                            <div class="item-ingredients__img"><img src="img/popup/rukola.webp" alt="rukola"></div>
+                            <div class="item-ingredients__details">
+                            <div class="item-ingredients__title"><h3 class="titl">Рукола</h3></div>
+                            <div class="item-ingredients__price">60 гр - 60₴</div>
+                            <div class="buttons">
+                                <span class="minus">-</span>
+                                <input type="text" value="0">
+                                <span class="plus">+</span>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="addingredients__item item-ingredients">
+                            <div class="item-ingredients__img"><img src="img/popup/salami.webp" alt="salami"></div>
+                            <div class="item-ingredients__details">
+                            <div class="item-ingredients__title"><h3 class="titl">Салямі</h3></div>
+                            <div class="item-ingredients__price">60 гр - 60₴</div>
+                            <div class="buttons">
+                                <span class="minus">-</span>
+                                <input type="text" value="0">
+                                <span class="plus">+</span>
+                                </div>
+                            </div>  
+                        </div>
+                </div>
+          </div>  
+   </div>
+</div>

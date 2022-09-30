@@ -1,0 +1,351 @@
+<div class="menu" id="menu">
+    <h1 class="menu__title">Наше меню</h1>
+    <div class="container">
+    <div class="menu__content content-menu">
+      <img class="content-menu__img" src="/img/basil.webp" alt="basil">
+      <img class="content-menu__img2" src="/img/pepper.webp" data-tilt data-tilt-max="50" data-tilt-speed="200" data-tilt-perspective="1000" alt="pepper">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="piza-tab" data-toggle="tab" href="#piza" role="tab" aria-controls="piza" aria-selected="true">Піца</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  id="salad-tab" href="#salad" data-toggle="tab">Салати</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="hotappetiezer-tab" data-toggle="tab" href="#hotappetiezer" role="tab" aria-controls="hotappetiezer" aria-selected="false">Гарячі закуски</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="desert-tab" data-toggle="tab" href="#desert" role="tab" aria-controls="desert" aria-selected="false">Десерти</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="drinks-tab" data-toggle="tab" href="#drinks" role="tab" aria-controls="drinks" aria-selected="false">Напої</a>
+              </li>
+          </ul>
+          <div class="tab-content ">
+            <div class="tab-pane fade show active" id="piza" role="tabpanel">
+              <div class="slider-menu">
+                <div class="slider-menu__item item-slider" id="product-id-lakampanya">
+                    <img src="img/menu/pizza/la-kampanya.webp" alt="la-kampanya">
+                    <div class="item-slider__content content-slider">
+                      <div class="content-slider__block-title"><h3 class="content-slider__title">ЛА КАМПАНІЯ</h3></div>
+                      <div class="content-slider__info">
+                        <p class="content-slider__sklad">Склад:</p>
+                        <p class="content-slider__indigrients">Томати, моцарела, ковбаса домашня, бекон, цибуля, часникова олія.</p>
+                      </div>
+                      <p class="content-slider__weight" >200г</p>
+                      <div class="content-slider__send send-content">
+                          <p class="send-content__price">235 ₴</p>
+                          <button onclick="buy(lakampanya)" class="send-content__button" type="submit" value>Замовити</button>
+                      </div>
+                    </div> 
+                </div>
+                <div class="slider-menu__item" id="product-id-bavariya">
+                    <img src="img/specialoffer/bavariya.webp" alt="bavariya">
+                    <div class="item-slider__content content-slider">
+                      <div class="content-slider__block-title"><h3 class="content-slider__title">БАВАРІЯ</h3></div>
+                      <div class="content-slider__info">
+                        <p class="content-slider__sklad">Склад:</p>
+                        <p class="content-slider__indigrients">Перетерті томати, моцарела, мисливські та мюнхенські ковбаски, гірчиця, свіжі печериці.</p>
+                      </div>
+                      <p class="content-slider__weight" >200г</p>
+                      <div class="content-slider__send send-content">
+                          <p class="send-content__price">235 ₴</p>
+                          <button onclick="buy(bavariya)" class="send-content__button" type="submit" value>Замовити</button>
+                      </div>
+                    </div> 
+                </div>
+                <div class="slider-menu__item" id="product-id-kapreze">
+                    <img src="img/specialoffer/kapreze.webp" alt="kapreze">
+                    <div class="item-slider__content content-slider">
+                      <div class="content-slider__block-title"><h3 class="content-slider__title">КАПРЕЗЕ</h3></div>
+                      <div class="content-slider__info">
+                        <p class="content-slider__sklad">Склад:</p>
+                        <p class="content-slider__indigrients">Моцарела, мінітомати, рукола, пармезан. Алергени: злаки, лактоза.</p>
+                      </div>
+                      <p class="content-slider__weight" >200г</p>
+                      <div class="content-slider__send send-content">
+                          <p class="send-content__price">235 ₴</p>
+                          <button onclick="buy(kapreze)" class="send-content__button" type="submit" value>Замовити</button>
+                      </div>
+                    </div> 
+                </div>
+                <div class="slider-menu__item" id="product-id-selmon">
+                    <img src="img/specialoffer/selmon.webp" alt="selmon">
+                    <div class="item-slider__content content-slider">
+                      <div class="content-slider__block-title"><h3 class="content-slider__title">СЕЛМОН</h3></div>
+                      <div class="content-slider__info">
+                        <p class="content-slider__sklad">Склад:</p>
+                        <p class="content-slider__indigrients">Лосось, моцарела, рікота, пармезан, червона ікра, рукола. Алергени: злаки, лактоза, риба.</p>
+                      </div>
+                        <p class="content-slider__weight" >200г</p>
+                      <div class="content-slider__send send-content">
+                          <p class="send-content__price">235 ₴</p>
+                          <button onclick="buy(selmon)" class="send-content__button" type="submit" value>Замовити</button>
+                      </div>
+                    </div> 
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="salad" role="tabpanel">
+              <div class="slider-menu">
+                <div class="slider-menu__item" id="product-id-parmoyu">
+                  <img src="img/menu/salad/salat-z-parmoyu-i-grusheyu.webp" alt="parmoyu">
+                  <div class="item-slider__content content-slider">
+                    <div class="content-slider__block-title"><h3 class="content-slider__title">САЛАТ З ПАРМСЬКОЮ ШИНКОЮ ТА ГРУШЕЮ</h3></div>
+                    <div class="content-slider__info">
+                      <p class="content-slider__sklad">Склад:</p>
+                      <p class="content-slider__indigrients">Мікс салатів, пармська шинка, груша та апельсин. Заправляється гірчично-медовим соусом.</p>
+                    </div>
+                    <p class="content-slider__weight" >180 г</p>
+                    <div class="content-slider__send send-content">
+                        <p class="send-content__price">185 ₴</p>
+                        <button onclick="buy(parmoyu)" class="send-content__button" type="submit" value>Замовити</button>
+                    </div>
+                  </div> 
+              </div>
+              <div class="slider-menu__item" id="product-id-cezar" >
+                <img src="img/menu/salad/salat-cezar-z-kurkoyu.webp" alt="cezar">
+                <div class="item-slider__content content-slider">
+                  <div class="content-slider__block-title"><h3 class="content-slider__title">САЛАТ «ЦЕЗАР» З КУРКОЮ</h3></div>
+                  <div class="content-slider__info">
+                    <p class="content-slider__sklad">Склад:</p>
+                    <p class="content-slider__indigrients">Листя салату айсберг, яйця перепелині, мінітомати, пармезан, часникові сухарики під соусом «Цезар». Подається з куркою.</p>
+                  </div>
+                  <p class="content-slider__weight" >310 г</p>
+                  <div class="content-slider__send send-content">
+                      <p class="send-content__price">135 ₴</p>
+                      <button onclick="buy(cezar)" class="send-content__button" type="submit" value>Замовити</button>
+                  </div>
+                </div> 
+            </div>
+            <div class="slider-menu__item" id="product-id-zelenii">
+              <img src="img/menu/salad/salat-zelenii-z-krevetkami.webp" alt="zelenii">
+              <div class="item-slider__content content-slider">
+                <div class="content-slider__block-title"><h3 class="content-slider__title">ЗЕЛЕНИЙ САЛАТ З КРЕВЕТКАМИ</h3></div>
+                <div class="content-slider__info">
+                  <p class="content-slider__sklad">Склад:</p>
+                  <p class="content-slider__indigrients">Мікс салатів з мінітоматами, креветками, авокадо, сиром пармезан, кедровими горішками та оливково-бальзамічним соусом.</p>
+                </div>
+                <p class="content-slider__weight" >200г</p>
+                <div class="content-slider__send send-content">
+                    <p class="send-content__price">270 ₴</p>
+                    <button onclick="buy(zelenii)" class="send-content__button" type="submit" value>Замовити</button>
+                </div>
+              </div> 
+          </div>
+          <div class="slider-menu__item" id="product-id-salatzelenii">
+            <img src="img/menu/salad/salat-zelenii.webp" alt="salat-zelenii">
+            <div class="item-slider__content content-slider">
+              <div class="content-slider__block-title"><h3 class="content-slider__title">ЗЕЛЕНИЙ САЛАТ</h3></div>
+              <div class="content-slider__info">
+                <p class="content-slider__sklad">Склад:</p>
+                <p class="content-slider__indigrients">Мікс салатів з мінітоматами, авокадо, сиром пармезан, кедровими горішками та оливково-бальзамічним соусом. </p>
+              </div>
+              <p class="content-slider__weight" >170г</p>
+              <div class="content-slider__send send-content">
+                  <p class="send-content__price">145 ₴</p>
+                  <button onclick="buy(salatzelenii)" class="send-content__button" type="submit" value>Замовити</button>
+              </div>
+            </div> 
+        </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="hotappetiezer" role="tabpanel">
+              <div class="slider-menu">
+                <div class="slider-menu__item" id="product-id-fokaca">
+                  <img src="img/menu/zakuska/fokaca-kon-parmedzano.webp" alt="fokaca">
+                  <div class="item-slider__content content-slider">
+                    <div class="content-slider__block-title"><h3 class="content-slider__title">ФОКАЧА КОН ПЕСТО</h3></div>
+                    <div class="content-slider__info">
+                      <p class="content-slider__sklad">Склад:</p>
+                      <p class="content-slider__indigrients">Оливкова олія, соус песто, пармезан. </p>
+                    </div>
+                      <p class="content-slider__weight" >170г</p>
+                    <div class="content-slider__send send-content">
+                        <p class="send-content__price">70 ₴</p>
+                        <button onclick="buy(fokaca)" class="send-content__button" type="submit" value>Замовити</button>
+                    </div>
+                  </div> 
+              </div>
+              <div class="slider-menu__item" id="product-id-brusketa">
+                <img src="img/menu/zakuska/trio-brusketa.webp" alt="brusketa">
+                <div class="item-slider__content content-slider">
+                  <div class="content-slider__block-title"><h3 class="content-slider__title">ТРІО БРУСКЕТТА</h3></div>
+                  <div class="content-slider__info">
+                    <p class="content-slider__sklad">Склад:</p>
+                    <p class="content-slider__indigrients">Традиційна італійська закуска із томатів, свіжих трав, фети, пармезану і пармської шинки, подається на хрусткій чіабаті. </p>
+                  </div>
+                    <p class="content-slider__weight" >130г</p>
+                  <div class="content-slider__send send-content">
+                      <p class="send-content__price">100 ₴</p>
+                      <button onclick="buy(brusketa)" class="send-content__button" type="submit" value>Замовити</button>
+                  </div>
+                </div> 
+            </div>
+            <div class="slider-menu__item" id="product-id-karpacolosos">
+              <img src="img/menu/zakuska/karpaco-losos.webp" alt="karpaco-losos">
+              <div class="item-slider__content content-slider">
+                <div class="content-slider__block-title"><h3 class="content-slider__title">КАРПАЧО ЗІ СВІЖОГО ЛОСОСЯ</h3></div>
+                <div class="content-slider__info">
+                  <p class="content-slider__sklad">Склад:</p>
+                  <p class="content-slider__indigrients">Подається з пармезаном, каперсами, листям руколи, томатами конкасе і лимоном під оливковим соусом.  </p>
+                </div>
+                  <p class="content-slider__weight" >170г</p>
+                <div class="content-slider__send send-content">
+                    <p class="send-content__price">245 ₴</p>
+                    <button onclick="buy(karpacolosos)" class="send-content__button" type="submit" value>Замовити</button>
+                </div>
+              </div> 
+          </div>
+          <div class="slider-menu__item" id="product-id-kartoplyafri">
+            <img src="img/menu/zakuska/kartoplya-fri.webp" alt="kartoplya-fri">
+            <div class="item-slider__content content-slider">
+              <div class="content-slider__block-title"><h3 class="content-slider__title">КАРТОПЛЯ ФРІ</h3></div>
+              <div class="content-slider__info">
+                <p class="content-slider__sklad">Склад:</p>
+                <p class="content-slider__indigrients">Смажена картопля. </p>
+              </div> 
+              <p class="content-slider__weight" >170г</p>
+              <div class="content-slider__send send-content">
+                  <p class="send-content__price">75 ₴</p>
+                  <div class="n" id="kartoplyafri"></div>
+                  <button onclick="buy(kartoplyafri)" class="send-content__button" type="submit" value>Замовити</button>
+              </div>
+            </div> 
+        </div>   
+        </div>
+        </div>
+            <div class="tab-pane fade" id="desert" role="tabpanel">
+                <div class="slider-menu">
+                  <div class="slider-menu__item" id="product-id-klubnichniidesert" >
+                    <picture><source srcset="img/menu/desert/klubnichnii_desert.webp" type="image/webp"><img src="img/menu/desert/klubnichnii_desert.jpg" alt="klubnichnii_desert"></picture>
+                    <div class="item-slider__content content-slider">
+                      <div class="content-slider__block-title"><h3 class="content-slider__title">ПОЛУНИЧНИЙ ДЕСЕРТ</h3></div>
+                      <div class="content-slider__info">
+                        <p class="content-slider__sklad">Склад:</p>
+                        <p class="content-slider__indigrients">Полуниця, грецький йогурт, печиво, полуничне жиле.</p>
+                      </div>  
+                      <p class="content-slider__weight" >100г</p>
+                      <div class="content-slider__send send-content">
+                          <p class="send-content__price">95 ₴</p>
+                          <button onclick="buy(klubnichniidesert)" class="send-content__button" type="submit" value>Замовити</button>
+                      </div>
+                    </div> 
+                </div>
+                <div class="slider-menu__item"  id="product-id-limonnakustarda">
+                  <img src="img/menu/desert/limonna-kustarda.webp" alt="limonna-kustarda">
+                  <div class="item-slider__content content-slider">
+                    <div class="content-slider__block-title"><h3 class="content-slider__title">ЛИМОННА КУСТАРДА</h3></div>
+                    <div class="content-slider__info">
+                      <p class="content-slider__sklad">Склад:</p>
+                      <p class="content-slider__indigrients">Ніжний лимонний десерт з малиновим соусом. </p>
+                    </div>  
+                    <p class="content-slider__weight" >110г</p>
+                    <div class="content-slider__send send-content">
+                        <p class="send-content__price">95 ₴</p>
+                        <button onclick="buy(limonnakustarda)" class="send-content__button" type="submit" value>Замовити</button>
+                    </div>
+                  </div> 
+              </div>
+              <div class="slider-menu__item"  id="product-id-magnoliya">
+                <picture><source srcset="img/menu/desert/magnoliya.webp" type="image/webp"><img src="img/menu/desert/magnoliya.jpg" alt="magnoliya"></picture>
+                <div class="item-slider__content content-slider">
+                  <div class="content-slider__block-title"><h3 class="content-slider__title">ПОЛУНИЧНА МАГНОЛІЯ</h3></div>
+                  <div class="content-slider__info">
+                    <p class="content-slider__sklad">Склад:</p>
+                    <p class="content-slider__indigrients">Полуниця, торт наполеон, вершки.</p>
+                  </div>
+                    <p class="content-slider__weight" >170г</p>
+                  <div class="content-slider__send send-content">
+                      <p class="send-content__price">115 ₴</p>
+                      <button onclick="buy(magnoliya)" class="send-content__button" type="submit" value>Замовити</button>
+                  </div>
+                </div> 
+            </div>
+            <div class="slider-menu__item" id="product-id-napoleon">
+              <picture><source srcset="img/menu/desert/napoleon.webp" type="image/webp"><img src="img/menu/desert/napoleon.jpg" alt="napoleon"></picture>
+              <div class="item-slider__content content-slider">
+                <div class="content-slider__block-title"><h3 class="content-slider__title">НАПОЛЕОН</h3></div>
+                <div class="content-slider__info">
+                  <p class="content-slider__sklad">Склад:</p>
+                  <p class="content-slider__indigrients">Пастеризоване коров'яче молоко, борошно пшеничне,вершкове масло, цукор, яйця курячі, натуральний "Ваніль".  </p>
+                </div>
+                 
+                  <p class="content-slider__weight" >170г</p>
+                <div class="content-slider__send send-content">
+                    <p class="send-content__price">125 ₴</p>
+                    <button onclick="buy(napoleon)" class="send-content__button" type="submit" value>Замовити</button>
+                </div>
+              </div> 
+          </div>
+                 
+                </div>
+              </div>
+              <div class="tab-pane fade" id="drinks" role="tabpanel">
+                <div class="slider-menu">
+                  <div class="slider-menu__item" id="product-id-shutterstock" >
+                    <picture><source srcset="img/menu/napoi/shutterstock.webp" type="image/webp"><img src="img/menu/napoi/shutterstock.jpg" alt="shutterstock"></picture>
+                    <div class="item-slider__content content-slider">
+                      <div class="content-slider__block-title"><h3 class="content-slider__title">ЛИМОНАД З ЛАЙМ</h3></div>
+                      <div class="content-slider__info">
+                        <p class="content-slider__sklad">Склад:</p>
+                        <p class="content-slider__indigrients">Вода і цукровий сироп, лайм.</p>
+                      </div> 
+                      <p class="content-slider__weight" >170мл</p>
+                      <div class="content-slider__send send-content">
+                          <p class="send-content__price">95 ₴</p>
+                          <button onclick="buy(shutterstock)" class="send-content__button" type="submit" value>Замовити</button>
+                      </div>
+                    </div> 
+                </div>
+                <div class="slider-menu__item" id="product-id-kombucha" >
+                  <picture><source srcset="img/menu/napoi/kombucha.webp" type="image/webp"><img src="img/menu/napoi/kombucha.jpg" alt="kombucha"></picture>
+                  <div class="item-slider__content content-slider">
+                    <div class="content-slider__block-title"><h3 class="content-slider__title">КОМБУЧА</h3></div>
+                    <div class="content-slider__info">
+                      <p class="content-slider__sklad">Склад:</p>
+                      <p class="content-slider__indigrients">Вода і цукровий сироп, лайм.</p>
+                     </div>
+                    <p class="content-slider__weight" >170мл</p>
+                    <div class="content-slider__send send-content">
+                        <p class="send-content__price">125 ₴</p>
+                        <button onclick="buy(kombucha)" class="send-content__button" type="submit" value>Замовити</button>
+                    </div>
+                  </div> 
+              </div>
+              <div class="slider-menu__item" id="product-id-ogurechniylimonad">
+                <picture><source srcset="img/menu/napoi/ogurechniy-limonad.webp" type="image/webp"><img src="img/menu/napoi/ogurechniy-limonad.jpg" alt="ogurechniy-limonad"></picture>
+                <div class="item-slider__content content-slider">
+                  <div class="content-slider__block-title"><h3 class="content-slider__title">ОГІРКОВИЙ ЛИМОНАД</h3></div>
+                  <div class="content-slider__info">
+                    <p class="content-slider__sklad">Склад:</p>
+                    <p class="content-slider__indigrients">Вода і цукровий сироп, огірок. </p>
+                  </div>
+                  <p class="content-slider__weight" >170мл</p>
+                  <div class="content-slider__send send-content">
+                      <p class="send-content__price">125 ₴</p>
+                      <button onclick="buy(ogurechniylimonad)" class="send-content__button" type="submit" value>Замовити</button>
+                  </div>
+                </div> 
+            </div>
+            <div class="slider-menu__item" id="product-id-sik">
+              <picture><source srcset="img/menu/napoi/sik.webp" type="image/webp"><img src="img/menu/napoi/sik.jpg" alt="sik"></picture>
+              <div class="item-slider__content content-slider">
+                <div class="content-slider__block-title"><h3 class="content-slider__title">МАЛИНОВИЙ СІК</h3></div>
+                <div class="content-slider__info">
+                  <p class="content-slider__sklad">Склад:</p>
+                  <p class="content-slider__indigrients">Вода і цукровий сироп, малиновий сік. </p>
+              </div>
+                <p class="content-slider__weight" >170мл</p>
+                <div class="content-slider__send send-content">
+                    <p class="send-content__price">125 ₴</p>
+                      <button onclick="buy(sik)" class="send-content__button" type="submit" value>Замовити</button>
+                </div>
+              </div> 
+          </div>
+        </div>
+      </div>   
+        </div>
+        </div>
+    </div>
+</div>

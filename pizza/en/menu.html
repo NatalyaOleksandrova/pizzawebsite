@@ -1,0 +1,351 @@
+<div class="menu" id="menu">
+  <h1 class="menu__title">Our Menu</h1>
+  <div class="container">
+    <div class="menu__content content-menu">
+      <img class="content-menu__img" src="/img/basil.webp">
+      <img class="content-menu__img2" src="/img/pepper.webp"data-tilt data-tilt-max="50" data-tilt-speed="200" data-tilt-perspective="1000" >
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="piza-tab" data-toggle="tab" href="#piza" role="tab" aria-controls="piza" aria-selected="true">Pizza</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  id="salad-tab" href="#salad" data-toggle="tab">Salad</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hoteng" id="hotappetiezer-tab" data-toggle="tab" href="#hotappetiezer" role="tab" aria-controls="hotappetiezer" aria-selected="false">Hotappetiezer</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" id="desert-tab" data-toggle="tab" href="#desert" role="tab" aria-controls="desert" aria-selected="false">Desert</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" id="drinks-tab" data-toggle="tab" href="#drinks" role="tab" aria-controls="drinks" aria-selected="false">Drinks</a>
+            </li>
+        </ul>
+        <div class="tab-content menus">
+         
+          <div class="tab-pane fade show active" id="piza" role="tabpanel" aria-labelledby="piza-tab">
+            <div class="slider-menu">
+              <div class="slider-menu__item item-slider" id="product-id-lakampanya">
+                  <img src="/img/menu/pizza/la-kampanya.webp" alt="la-kampanya">
+                  <div class="item-slider__content content-slider">
+                    <div class="content-slider__block-title"><h3 class="content-slider__title">La-kampanya</h3></div>
+                    <div class="content-slider__info">
+                      <p class="content-slider__sklad">Ingredients:</p>
+                      <p class="content-slider__indigrients">Mozzarella, sausages, bacon, onion, tomato, garlic oil.</p>
+                    </div>
+                    <p class="content-slider__weight" >200g</p>
+                    <div class="content-slider__send send-content">
+                        <p class="send-content__price">235 ₴</p>
+                        <button onclick="buy(lakampanya)" class="send-content__button"type="submit" value>Order</button>
+                    </div>
+                  </div> 
+              </div>
+              <div class="slider-menu__item" id="product-id-bavariya">
+                  <img src="/img/specialoffer/bavariya.webp" alt="bavariya">
+                  <div class="item-slider__content content-slider">
+                    <div class="content-slider__block-title"><h3 class="content-slider__title">Bavariya</h3></div>
+                    <div class="content-slider__info">
+                      <p class="content-slider__sklad">Ingredients:</p>
+                      <p class="content-slider__indigrients">Ground tomatoes, mozzarella, hunter's and Munich sausages, mustard, fresh mushrooms.</p>
+                    </div>
+                    <p class="content-slider__weight" >200g</p>
+                    <div class="content-slider__send send-content">
+                        <p class="send-content__price">235 ₴</p>
+                        <button onclick="buy(bavariya)" class="send-content__button"type="submit" value>Order</button>
+                    </div>
+                  </div> 
+              </div>
+              <div class="slider-menu__item" id="product-id-kapreze">
+                  <img src="/img/specialoffer/kapreze.webp" alt="kapreze">
+                  <div class="item-slider__content content-slider">
+                    <div class="content-slider__block-title"><h3 class="content-slider__title">Kapreze</h3></div>
+                    <div class="content-slider__info">
+                      <p class="content-slider__sklad">Ingredients:</p>
+                      <p class="content-slider__indigrients">Mozzarella, mini tomatoes, rucola, parmigiano.</p>
+                    </div>
+                    <p class="content-slider__weight" >200g</p>
+                    <div class="content-slider__send send-content">
+                        <p class="send-content__price">235 ₴</p>
+                        <button onclick="buy(kapreze)" class="send-content__button"type="submit" value>Order</button>
+                    </div>
+                  </div> 
+              </div>
+              <div class="slider-menu__item" id="product-id-selmon">
+                  <img src="/img/specialoffer/selmon.webp" alt="selmon">
+                  <div class="item-slider__content content-slider">
+                    <div class="content-slider__block-title"><h3 class="content-slider__title">Selmon</h3></div>
+                    <div class="content-slider__info">
+                      <p class="content-slider__sklad">Ingredients:</p>
+                      <p class="content-slider__indigrients">Salmon, mozzarella, ricotta, parmesan, red caviar, rucola.</p>
+                    </div>
+                      <p class="content-slider__weight" >200g</p>
+                    <div class="content-slider__send send-content">
+                        <p class="send-content__price">235 ₴</p>
+                        <button onclick="buy(selmon)" class="send-content__button"type="submit" value>Order</button>
+                    </div>
+                  </div> 
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="salad" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="slider-menu">
+              <div class="slider-menu__item" id="product-id-parmoyu">
+                <img src="/img/menu/salad/salat-z-parmoyu-i-grusheyu.webp" alt="parmoyu">
+                <div class="item-slider__content content-slider">
+                  <div class="content-slider__block-title"><h3 class="content-slider__title">Parma ham and pear salad</h3></div>
+                  <div class="content-slider__info">
+                    <p class="content-slider__sklad">Ingredients:</p>
+                    <p class="content-slider__indigrients">Mixed salad leaves, Parma ham, pear and orange. Dressed with honey and mustard sauce.</p>
+                  </div>
+                  <p class="content-slider__weight" >180 g</p>
+                  <div class="content-slider__send send-content">
+                      <p class="send-content__price">185 ₴</p>
+                      <button onclick="buy(parmoyu)" class="send-content__button"type="submit" value>Order</button>
+                  </div>
+                </div> 
+            </div>
+            <div class="slider-menu__item" id="product-id-cezar" >
+              <img src="/img/menu/salad/salat-cezar-z-kurkoyu.webp" alt="cezar">
+              <div class="item-slider__content content-slider">
+                <div class="content-slider__block-title"><h3 class="content-slider__title">Caesar salad with chicken</h3></div>
+                <div class="content-slider__info">
+                  <p class="content-slider__sklad">Ingredients:</p>
+                  <p class="content-slider__indigrients">Lettuce, quail eggs, mini tomatoes, garlic croutons, parmigiano , seasoned with Caesar's sauce. Served with chicken.</p>
+                </div>
+                <p class="content-slider__weight" >310 g</p>
+                <div class="content-slider__send send-content">
+                    <p class="send-content__price">135 ₴</p>
+                    <button onclick="buy(cezar)" class="send-content__button"type="submit" value>Order</button>
+                </div>
+              </div> 
+          </div>
+          <div class="slider-menu__item" id="product-id-zelenii">
+            <img src="/img/menu/salad/salat-zelenii-z-krevetkami.webp" alt="zelenii">
+            <div class="item-slider__content content-slider">
+              <div class="content-slider__block-title"><h3 class="content-slider__title">Green salad with shrimps</h3></div>
+              <div class="content-slider__info">
+                <p class="content-slider__sklad">Ingredients:</p>
+                <p class="content-slider__indigrients">Lettuce mix, mini tomatoes, shrimps, avocado, parmigiano and pine nuts with olive and balsamic sause.</p>
+              </div>
+              <p class="content-slider__weight" >200g</p>
+              <div class="content-slider__send send-content">
+                  <p class="send-content__price">270 ₴</p>
+                  <button onclick="buy(zelenii)" class="send-content__button"type="submit" value>Order</button>
+              </div>
+            </div> 
+        </div>
+        <div class="slider-menu__item" id="product-id-salatzelenii">
+          <img src="/img/menu/salad/salat-zelenii.webp" alt="salat-zelenii">
+          <div class="item-slider__content content-slider">
+            <div class="content-slider__block-title"><h3 class="content-slider__title">Green salad</h3></div>
+            <div class="content-slider__info">
+              <p class="content-slider__sklad">Ingredients:</p>
+              <p class="content-slider__indigrients">Lettuce mix, mini tomatoes, avocado, parmigiano and pine nuts with olive and balsamic sause.</p>
+            </div>
+            <p class="content-slider__weight" >170g</p>
+            <div class="content-slider__send send-content">
+                <p class="send-content__price">145 ₴</p>
+                <button onclick="buy(salatzelenii)" class="send-content__button"type="submit" value>Order</button>
+            </div>
+          </div> 
+      </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="hotappetiezer" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="slider-menu">
+              <div class="slider-menu__item" id="product-id-fokaca">
+                <img src="/img/menu/zakuska/fokaca-kon-parmedzano.webp" alt="fokaca">
+                <div class="item-slider__content content-slider">
+                  <div class="content-slider__block-title"><h3 class="content-slider__title">Fokaca kon parmedzano</h3></div>
+                  <div class="content-slider__info">
+                    <p class="content-slider__sklad">Ingredients:</p>
+                    <p class="content-slider__indigrients">Оlive oil, pesto sause, parmigiano. </p>
+                  </div>
+                    <p class="content-slider__weight" >170g</p>
+                  <div class="content-slider__send send-content">
+                      <p class="send-content__price">70 ₴</p>
+                      <button onclick="buy(fokaca)" class="send-content__button"type="submit" value>Order</button>
+                  </div>
+                </div> 
+            </div>
+            <div class="slider-menu__item" id="product-id-brusketa">
+              <img src="/img/menu/zakuska/trio-brusketa.webp" alt="brusketa">
+              <div class="item-slider__content content-slider">
+                <div class="content-slider__block-title"><h3 class="content-slider__title">Trio brusketa</h3></div>
+                <div class="content-slider__info">
+                  <p class="content-slider__sklad">Ingredients:</p>
+                  <p class="content-slider__indigrients">Traditional Italian appetizer - tomatoes, feta, parmigiano and parma ham. Served on crispy ciabatta. </p>
+                </div>
+                  <p class="content-slider__weight" >130g</p>
+                <div class="content-slider__send send-content">
+                    <p class="send-content__price">100 ₴</p>
+                    <button onclick="buy(brusketa)" class="send-content__button"type="submit" value>Order</button>
+                </div>
+              </div> 
+          </div>
+          <div class="slider-menu__item" id="product-id-karpacolosos">
+            <img src="/img/menu/zakuska/karpaco-losos.webp" alt="karpaco-losos">
+            <div class="item-slider__content content-slider">
+              <div class="content-slider__block-title"><h3 class="content-slider__title">Karpaco losos</h3></div>
+              <div class="content-slider__info">
+                <p class="content-slider__sklad">Ingredients:</p>
+                <p class="content-slider__indigrients">Served with parmigiano cheese, capers, rucola, concasse tomatoes and lemon. Seasoned with olive sauce. </p>
+              </div>
+                <p class="content-slider__weight" >170g</p>
+              <div class="content-slider__send send-content">
+                  <p class="send-content__price">245 ₴</p>
+                  <button onclick="buy(karpacolosos)" class="send-content__button"type="submit" value>Order</button>
+              </div>
+            </div> 
+        </div>
+        <div class="slider-menu__item" id="product-id-kartoplyafri">
+          <img src="/img/menu/zakuska/kartoplya-fri.webp" alt="kartoplya-fri">
+          <div class="item-slider__content content-slider">
+            <div class="content-slider__block-title"><h3 class="content-slider__title">Kartoplya fri</h3></div>
+            <div class="content-slider__info">
+              <p class="content-slider__sklad">Ingredients:</p>
+              <p class="content-slider__indigrients">Fried potatoes. </p>
+            </div> 
+            <p class="content-slider__weight" >170g</p>
+            <div class="content-slider__send send-content">
+                <p class="send-content__price">75 ₴</p>
+                <button onclick="buy(kartoplyafri)" class="send-content__button"type="submit" value>Order</button>
+            </div>
+          </div> 
+      </div>
+      </div>
+          </div>
+          <div class="tab-pane fade" id="desert" role="tabpanel" aria-labelledby="contact-tab">
+              <div class="slider-menu">
+                <div class="slider-menu__item" id="product-id-klubnichniidesert" >
+                  <img src="/img/menu/desert/klubnichnii_desert.jpg" alt="klubnichnii_desert">
+                  <div class="item-slider__content content-slider">
+                    <div class="content-slider__block-title"><h3 class="content-slider__title">Strawberry dessert</h3></div>
+                    <div class="content-slider__info">
+                      <p class="content-slider__sklad">Ingredients:</p>
+                      <p class="content-slider__indigrients">Strawberries, Greek yogurt, cookies, strawberry jelly.</p>
+                    </div>  
+                    <p class="content-slider__weight" >100g</p>
+                    <div class="content-slider__send send-content">
+                        <p class="send-content__price">95 ₴</p>
+                        <button onclick="buy(klubnichniidesert)" class="send-content__button"type="submit" value>Order</button>
+                    </div>
+                  </div> 
+              </div>
+              <div class="slider-menu__item"  id="product-id-limonnakustarda">
+                <img src="/img/menu/desert/limonna-kustarda.webp" alt="limonna-kustarda">
+                <div class="item-slider__content content-slider">
+                  <div class="content-slider__block-title"><h3 class="content-slider__title">Lemon custarda</h3></div>
+                  <div class="content-slider__info">
+                    <p class="content-slider__sklad">Ingredients:</p>
+                    <p class="content-slider__indigrients">Fine lemon dessert with raspberry sauce. </p>
+                  </div>  
+                  <p class="content-slider__weight" >110g</p>
+                  <div class="content-slider__send send-content">
+                      <p class="send-content__price">95 ₴</p>
+                      <button onclick="buy(limonnakustarda)" class="send-content__button"type="submit" value>Order</button>
+                  </div>
+                </div> 
+            </div>
+            <div class="slider-menu__item"  id="product-id-magnoliya">
+              <img src="/img/menu/desert/magnoliya.jpg" alt="magnoliya">
+              <div class="item-slider__content content-slider">
+                <div class="content-slider__block-title"><h3 class="content-slider__title">Strawberry magnolia</h3></div>
+                <div class="content-slider__info">
+                  <p class="content-slider__sklad">Ingredients:</p>
+                  <p class="content-slider__indigrients">Strawberries, Napoleon cake, cream.</p>
+                </div>
+                  <p class="content-slider__weight" >170g</p>
+                <div class="content-slider__send send-content">
+                    <p class="send-content__price">115 ₴</p>
+                    <button onclick="buy(magnoliya)" class="send-content__button"type="submit" value>Order</button>
+                </div>
+              </div> 
+          </div>
+          <div class="slider-menu__item" id="product-id-napoleon">
+            <img src="/img/menu/desert/napoleon.jpg" alt="napoleon">
+            <div class="item-slider__content content-slider">
+              <div class="content-slider__block-title"><h3 class="content-slider__title">Napoleon</h3></div>
+              <div class="content-slider__info">
+                <p class="content-slider__sklad">Ingredients:</p>
+                <p class="content-slider__indigrients">Pasteurized cow's milk, wheat flour, butter, sugar, chicken eggs, natural "Vanilla". </p>
+              </div>
+               
+                <p class="content-slider__weight" >170g</p>
+              <div class="content-slider__send send-content">
+                  <p class="send-content__price">125 ₴</p>
+                  <button onclick="buy(napoleon)" class="send-content__button"type="submit" value>Order</button>
+              </div>
+            </div> 
+        </div>
+               
+              </div>
+            </div>
+            <div class="tab-pane fade" id="drinks" role="tabpanel" aria-labelledby="contact-tab">
+              <div class="slider-menu">
+                <div class="slider-menu__item" id="product-id-shutterstock" >
+                  <img src="/img/menu/napoi/shutterstock.jpg" alt="shutterstock">
+                  <div class="item-slider__content content-slider">
+                    <div class="content-slider__block-title"><h3 class="content-slider__title">Lemonade with lime</h3></div>
+                    <div class="content-slider__info">
+                      <p class="content-slider__sklad">Ingredients:</p>
+                      <p class="content-slider__indigrients">Water and sugar syrup, lime.</p>
+                    </div> 
+                    <p class="content-slider__weight" >170ml</p>
+                    <div class="content-slider__send send-content">
+                        <p class="send-content__price">95 ₴</p>
+                        <button onclick="buy(shutterstock)" class="send-content__button"type="submit" value>Order</button>
+                    </div>
+                  </div> 
+              </div>
+              <div class="slider-menu__item" id="product-id-kombucha" >
+                <img src="/img/menu/napoi/kombucha.jpg" alt="kombucha">
+                <div class="item-slider__content content-slider">
+                  <div class="content-slider__block-title"><h3 class="content-slider__title">Kombucha</h3></div>
+                  <div class="content-slider__info">
+                    <p class="content-slider__sklad">Ingredients:</p>
+                    <p class="content-slider__indigrients">Water and sugar syrup, lime.</p>
+                   </div>
+                  <p class="content-slider__weight" >170ml</p>
+                  <div class="content-slider__send send-content">
+                      <p class="send-content__price">125 ₴</p>
+                      <button onclick="buy(kombucha)" class="send-content__button"type="submit" value>Order</button>
+                  </div>
+                </div> 
+            </div>
+            <div class="slider-menu__item" id="product-id-ogurechniylimonad">
+              <img src="/img/menu/napoi/ogurechniy-limonad.jpg" alt="ogurechniy-limonad">
+              <div class="item-slider__content content-slider">
+                <div class="content-slider__block-title"><h3 class="content-slider__title">Cucumber lemonade</h3></div>
+                <div class="content-slider__info">
+                  <p class="content-slider__sklad">Ingredients:</p>
+                  <p class="content-slider__indigrients">Water and sugar syrup, cucumber. </p>
+                </div>
+                <p class="content-slider__weight" >170ml</p>
+                <div class="content-slider__send send-content">
+                    <p class="send-content__price">125 ₴</p>
+                    <button onclick="buy(ogurechniylimonad)" class="send-content__button"type="submit" value>Order</button>
+                </div>
+              </div> 
+          </div>
+          <div class="slider-menu__item" id="product-id-sik">
+            <img src="/img/menu/napoi/sik.jpg" alt="sik">
+            <div class="item-slider__content content-slider">
+              <div class="content-slider__block-title"><h3 class="content-slider__title">Raspberry juice</h3></div>
+              <div class="content-slider__info">
+                <p class="content-slider__sklad">Ingredients:</p>
+                <p class="content-slider__indigrients">Water and sugar syrup, raspberry juice. </p>
+            </div>
+              <p class="content-slider__weight" >170ml</p>
+              <div class="content-slider__send send-content">
+                  <p class="send-content__price">125 ₴</p>
+                    <button onclick="buy(sik)" class="send-content__button"type="submit" value>Order</button>
+              </div>
+            </div> 
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
